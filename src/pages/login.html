@@ -1,6 +1,6 @@
 <html>
 <head>
-        <link href="../static/login.css" rel="stylesheet" type="text/css" />
+        <link href="../public/static/login.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <div class="topnav">
@@ -21,19 +21,31 @@
 <div class="card">
   <div class="container">
     <label for="uname"><h3><b>Username</b></h3></label>
-    <input type="text" placeholder="Enter Username"    required>
+    <input type="text" placeholder="Enter Username"  id="Username"  required>
 
     <label for="psw"><h3><b>Password</b></h3></label>
-    <input type="password" placeholder="Enter Password"    required>
+    <input type="password" placeholder="Enter Password"  id="Password"  required>
     <div class="wrapper">
-    <button class="btn"type="submit">Login</button>
+    <button class="btn"type="submit" onclick="test()">Login</button>
     </div>
     <br>
     <br>
     <a href="/signup">Not a user? Signup here</a>
   </div>
   </div>
+  <p id="demo"></p>
 
 
 </body>
+<script>
+function test(){
+  document.getElementById("demo").innerHTML="test";
+  window.location="signup.html";
+
+}
+
+
+</script>
+
+
 </html>
