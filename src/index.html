@@ -1,12 +1,33 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <h1> Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+<head>
+        <link href="static/login.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<div class="topnav">
+<a><h1>DlvrMe-Login</h1></a>
+</div>
+<body>
+
+ <br>
+ <br>
+ <br>
+ <br>
+<div class="card">
+  <div class="container">
+    <label for="uname"><h3><b>Username</b></h3></label>
+    <input type="text" placeholder="Enter Username"  @bind="Username"  required>
+
+    <label for="psw"><h3><b>Password</b></h3></label>
+    <input type="password" placeholder="Enter Password"  @bind="Password"   required>
+    <div class="wrapper">
+    <button class="btn"type="submit"  >Login</button>
+    </div>
+    <br>
+    <br>
+    <a href="/signup">Not a user? Signup here</a>
+  </div>
+  </div>
+
+
+</body>
 </html>
