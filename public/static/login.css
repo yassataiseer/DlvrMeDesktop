@@ -173,3 +173,12 @@ html {
       color:rgb(0, 35, 102) ;
     background-color:rgb(255,254,240);
   }
+  .responsive { /*image size*/
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

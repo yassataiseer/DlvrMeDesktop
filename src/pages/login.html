@@ -20,28 +20,30 @@
 
 <div class="card">
   <div class="container">
+    <form name = "login" action = "" method="GET">
     <label for="uname"><h3><b>Username</b></h3></label>
-    <input type="text" placeholder="Enter Username"  id="Username"  required>
+    <input type="text" placeholder="Enter Username"  id="Username" value="" required>
 
     <label for="psw"><h3><b>Password</b></h3></label>
     <input type="password" placeholder="Enter Password"  id="Password"  required>
     <div class="wrapper">
-    <button class="btn"type="submit" onclick="test()">Login</button>
+    <button class="btn"type="submit" onclick="test(this.form)">Login</button>
     </div>
     <br>
     <br>
     <a href="/signup">Not a user? Signup here</a>
+    <img src="assets/NewLogo.png" alt="An image is suppose to be here" class="responsive" >
+</form> 
   </div>
   </div>
   <p id="demo"></p>
 
 
 </body>
-<script>
-function test(){
-  document.getElementById("demo").innerHTML="test";
-  window.location="signup.html";
-
+<script LANGUAGE="JavaScript">
+function test(form){
+  var TestVar = form.Username.value;
+  alert("You typed: " + TestVar);
 }
 
 
